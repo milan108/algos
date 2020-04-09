@@ -65,10 +65,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/milan/Practice/Algorithms
+CMAKE_SOURCE_DIR = /home/milan/practice/algos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/milan/Practice/Algorithms
+CMAKE_BINARY_DIR = /home/milan/practice/algos
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/Practice/Algorithms/CMakeFiles /home/milan/Practice/Algorithms/sort/CMakeFiles/progress.marks
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/Practice/Algorithms/CMakeFiles 0
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles /home/milan/practice/algos/sort/CMakeFiles/progress.marks
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/clean
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,22 +114,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/preinstall
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/preinstall
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sort/CMakeFiles/selection_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/selection_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/selection_sort.dir/rule
 .PHONY : sort/CMakeFiles/selection_sort.dir/rule
 
 # Convenience name for target.
@@ -139,12 +139,12 @@ selection_sort: sort/CMakeFiles/selection_sort.dir/rule
 
 # fast build rule for target.
 selection_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/build
 .PHONY : selection_sort/fast
 
 # Convenience name for target.
 sort/CMakeFiles/merge_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/merge_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/merge_sort.dir/rule
 .PHONY : sort/CMakeFiles/merge_sort.dir/rule
 
 # Convenience name for target.
@@ -154,12 +154,12 @@ merge_sort: sort/CMakeFiles/merge_sort.dir/rule
 
 # fast build rule for target.
 merge_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/build
 .PHONY : merge_sort/fast
 
 # Convenience name for target.
 sort/CMakeFiles/quick_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/quick_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/quick_sort.dir/rule
 .PHONY : sort/CMakeFiles/quick_sort.dir/rule
 
 # Convenience name for target.
@@ -169,12 +169,12 @@ quick_sort: sort/CMakeFiles/quick_sort.dir/rule
 
 # fast build rule for target.
 quick_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/build
 .PHONY : quick_sort/fast
 
 # Convenience name for target.
 sort/CMakeFiles/insertion_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/insertion_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/insertion_sort.dir/rule
 .PHONY : sort/CMakeFiles/insertion_sort.dir/rule
 
 # Convenience name for target.
@@ -184,12 +184,12 @@ insertion_sort: sort/CMakeFiles/insertion_sort.dir/rule
 
 # fast build rule for target.
 insertion_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/build
 .PHONY : insertion_sort/fast
 
 # Convenience name for target.
 sort/CMakeFiles/bubble_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/bubble_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/bubble_sort.dir/rule
 .PHONY : sort/CMakeFiles/bubble_sort.dir/rule
 
 # Convenience name for target.
@@ -199,12 +199,12 @@ bubble_sort: sort/CMakeFiles/bubble_sort.dir/rule
 
 # fast build rule for target.
 bubble_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/build
 .PHONY : bubble_sort/fast
 
 # Convenience name for target.
 sort/CMakeFiles/merge_insertion_sort.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/merge_insertion_sort.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 sort/CMakeFiles/merge_insertion_sort.dir/rule
 .PHONY : sort/CMakeFiles/merge_insertion_sort.dir/rule
 
 # Convenience name for target.
@@ -214,7 +214,7 @@ merge_insertion_sort: sort/CMakeFiles/merge_insertion_sort.dir/rule
 
 # fast build rule for target.
 merge_insertion_sort/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/build
 .PHONY : merge_insertion_sort/fast
 
 bubble_sort.o: bubble_sort.c.o
@@ -223,7 +223,7 @@ bubble_sort.o: bubble_sort.c.o
 
 # target to build an object file
 bubble_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.o
 .PHONY : bubble_sort.c.o
 
 bubble_sort.i: bubble_sort.c.i
@@ -232,7 +232,7 @@ bubble_sort.i: bubble_sort.c.i
 
 # target to preprocess a source file
 bubble_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.i
 .PHONY : bubble_sort.c.i
 
 bubble_sort.s: bubble_sort.c.s
@@ -241,7 +241,7 @@ bubble_sort.s: bubble_sort.c.s
 
 # target to generate assembly for a file
 bubble_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/bubble_sort.c.s
 .PHONY : bubble_sort.c.s
 
 insertion_sort.o: insertion_sort.c.o
@@ -250,7 +250,7 @@ insertion_sort.o: insertion_sort.c.o
 
 # target to build an object file
 insertion_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.o
 .PHONY : insertion_sort.c.o
 
 insertion_sort.i: insertion_sort.c.i
@@ -259,7 +259,7 @@ insertion_sort.i: insertion_sort.c.i
 
 # target to preprocess a source file
 insertion_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.i
 .PHONY : insertion_sort.c.i
 
 insertion_sort.s: insertion_sort.c.s
@@ -268,7 +268,7 @@ insertion_sort.s: insertion_sort.c.s
 
 # target to generate assembly for a file
 insertion_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/insertion_sort.c.s
 .PHONY : insertion_sort.c.s
 
 merge_insertion_sort.o: merge_insertion_sort.c.o
@@ -277,7 +277,7 @@ merge_insertion_sort.o: merge_insertion_sort.c.o
 
 # target to build an object file
 merge_insertion_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.o
 .PHONY : merge_insertion_sort.c.o
 
 merge_insertion_sort.i: merge_insertion_sort.c.i
@@ -286,7 +286,7 @@ merge_insertion_sort.i: merge_insertion_sort.c.i
 
 # target to preprocess a source file
 merge_insertion_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.i
 .PHONY : merge_insertion_sort.c.i
 
 merge_insertion_sort.s: merge_insertion_sort.c.s
@@ -295,7 +295,7 @@ merge_insertion_sort.s: merge_insertion_sort.c.s
 
 # target to generate assembly for a file
 merge_insertion_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/merge_insertion_sort.c.s
 .PHONY : merge_insertion_sort.c.s
 
 merge_sort.o: merge_sort.c.o
@@ -304,7 +304,7 @@ merge_sort.o: merge_sort.c.o
 
 # target to build an object file
 merge_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.o
 .PHONY : merge_sort.c.o
 
 merge_sort.i: merge_sort.c.i
@@ -313,7 +313,7 @@ merge_sort.i: merge_sort.c.i
 
 # target to preprocess a source file
 merge_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.i
 .PHONY : merge_sort.c.i
 
 merge_sort.s: merge_sort.c.s
@@ -322,7 +322,7 @@ merge_sort.s: merge_sort.c.s
 
 # target to generate assembly for a file
 merge_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/merge_sort.c.s
 .PHONY : merge_sort.c.s
 
 quick_sort.o: quick_sort.c.o
@@ -331,7 +331,7 @@ quick_sort.o: quick_sort.c.o
 
 # target to build an object file
 quick_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.o
 .PHONY : quick_sort.c.o
 
 quick_sort.i: quick_sort.c.i
@@ -340,7 +340,7 @@ quick_sort.i: quick_sort.c.i
 
 # target to preprocess a source file
 quick_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.i
 .PHONY : quick_sort.c.i
 
 quick_sort.s: quick_sort.c.s
@@ -349,7 +349,7 @@ quick_sort.s: quick_sort.c.s
 
 # target to generate assembly for a file
 quick_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/quick_sort.c.s
 .PHONY : quick_sort.c.s
 
 selection_sort.o: selection_sort.c.o
@@ -358,7 +358,7 @@ selection_sort.o: selection_sort.c.o
 
 # target to build an object file
 selection_sort.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.o
 .PHONY : selection_sort.c.o
 
 selection_sort.i: selection_sort.c.i
@@ -367,7 +367,7 @@ selection_sort.i: selection_sort.c.i
 
 # target to preprocess a source file
 selection_sort.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.i
 .PHONY : selection_sort.c.i
 
 selection_sort.s: selection_sort.c.s
@@ -376,7 +376,7 @@ selection_sort.s: selection_sort.c.s
 
 # target to generate assembly for a file
 selection_sort.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/selection_sort.c.s
 .PHONY : selection_sort.c.s
 
 # Help Target
@@ -422,6 +422,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -65,10 +65,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/milan/Practice/Algorithms
+CMAKE_SOURCE_DIR = /home/milan/practice/algos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/milan/Practice/Algorithms
+CMAKE_BINARY_DIR = /home/milan/practice/algos
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/Practice/Algorithms/CMakeFiles /home/milan/Practice/Algorithms/misc/CMakeFiles/progress.marks
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/Practice/Algorithms/CMakeFiles 0
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles /home/milan/practice/algos/misc/CMakeFiles/progress.marks
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/clean
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,22 +114,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/preinstall
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/preinstall
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 misc/CMakeFiles/polynomials.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/polynomials.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/polynomials.dir/rule
 .PHONY : misc/CMakeFiles/polynomials.dir/rule
 
 # Convenience name for target.
@@ -139,12 +139,12 @@ polynomials: misc/CMakeFiles/polynomials.dir/rule
 
 # fast build rule for target.
 polynomials/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/build
 .PHONY : polynomials/fast
 
 # Convenience name for target.
 misc/CMakeFiles/binary_addition.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/binary_addition.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/binary_addition.dir/rule
 .PHONY : misc/CMakeFiles/binary_addition.dir/rule
 
 # Convenience name for target.
@@ -154,12 +154,12 @@ binary_addition: misc/CMakeFiles/binary_addition.dir/rule
 
 # fast build rule for target.
 binary_addition/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/build
 .PHONY : binary_addition/fast
 
 # Convenience name for target.
 misc/CMakeFiles/set_search_sum.dir/rule:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/set_search_sum.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 misc/CMakeFiles/set_search_sum.dir/rule
 .PHONY : misc/CMakeFiles/set_search_sum.dir/rule
 
 # Convenience name for target.
@@ -169,7 +169,7 @@ set_search_sum: misc/CMakeFiles/set_search_sum.dir/rule
 
 # fast build rule for target.
 set_search_sum/fast:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/build
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/build
 .PHONY : set_search_sum/fast
 
 binary_addition.o: binary_addition.cpp.o
@@ -178,7 +178,7 @@ binary_addition.o: binary_addition.cpp.o
 
 # target to build an object file
 binary_addition.cpp.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.o
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.o
 .PHONY : binary_addition.cpp.o
 
 binary_addition.i: binary_addition.cpp.i
@@ -187,7 +187,7 @@ binary_addition.i: binary_addition.cpp.i
 
 # target to preprocess a source file
 binary_addition.cpp.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.i
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.i
 .PHONY : binary_addition.cpp.i
 
 binary_addition.s: binary_addition.cpp.s
@@ -196,7 +196,7 @@ binary_addition.s: binary_addition.cpp.s
 
 # target to generate assembly for a file
 binary_addition.cpp.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.s
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/binary_addition.cpp.s
 .PHONY : binary_addition.cpp.s
 
 polynomials.o: polynomials.c.o
@@ -205,7 +205,7 @@ polynomials.o: polynomials.c.o
 
 # target to build an object file
 polynomials.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.o
 .PHONY : polynomials.c.o
 
 polynomials.i: polynomials.c.i
@@ -214,7 +214,7 @@ polynomials.i: polynomials.c.i
 
 # target to preprocess a source file
 polynomials.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.i
 .PHONY : polynomials.c.i
 
 polynomials.s: polynomials.c.s
@@ -223,7 +223,7 @@ polynomials.s: polynomials.c.s
 
 # target to generate assembly for a file
 polynomials.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/polynomials.c.s
 .PHONY : polynomials.c.s
 
 set_search_sum.o: set_search_sum.c.o
@@ -232,7 +232,7 @@ set_search_sum.o: set_search_sum.c.o
 
 # target to build an object file
 set_search_sum.c.o:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.o
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.o
 .PHONY : set_search_sum.c.o
 
 set_search_sum.i: set_search_sum.c.i
@@ -241,7 +241,7 @@ set_search_sum.i: set_search_sum.c.i
 
 # target to preprocess a source file
 set_search_sum.c.i:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.i
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.i
 .PHONY : set_search_sum.c.i
 
 set_search_sum.s: set_search_sum.c.s
@@ -250,7 +250,7 @@ set_search_sum.s: set_search_sum.c.s
 
 # target to generate assembly for a file
 set_search_sum.c.s:
-	cd /home/milan/Practice/Algorithms && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.s
+	cd /home/milan/practice/algos && $(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/set_search_sum.c.s
 .PHONY : set_search_sum.c.s
 
 # Help Target
@@ -284,6 +284,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/milan/Practice/Algorithms && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
