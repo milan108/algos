@@ -17,9 +17,9 @@ int main()
 
 int horners(int* coeffs, int n, int x)
 {
-	int y = 0;
+	int y =coeffs[n];
 
-	for(int i = n; i > -1; i--)	
+	for(int i = n - 1; i > -1; i--)	
 		y = coeffs[i] + x * y;
 
 	return y;
