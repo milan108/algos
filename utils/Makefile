@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -98,13 +101,13 @@ edit_cache/fast: edit_cache
 # The main all target
 all: cmake_check_build_system
 	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles /home/milan/practice/algos/utils/CMakeFiles/progress.marks
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 utils/all
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +117,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -129,7 +132,7 @@ depend:
 
 # Convenience name for target.
 utils/CMakeFiles/utils.dir/rule:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
 .PHONY : utils/CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -139,7 +142,7 @@ utils: utils/CMakeFiles/utils.dir/rule
 
 # fast build rule for target.
 utils/fast:
-	cd /home/milan/practice/algos && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
 utils.o: utils.c.o
@@ -148,7 +151,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/milan/practice/algos && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.o
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -157,7 +160,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/milan/practice/algos && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.i
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -166,7 +169,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/milan/practice/algos && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.s
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target

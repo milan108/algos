@@ -4,6 +4,7 @@
 **/cmake_install.cmake
 **/*.swp
 **/.vs
+**/.vscode
 **/out
 **/*.a
 **/__pycache__

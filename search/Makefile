@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -98,13 +101,13 @@ edit_cache/fast: edit_cache
 # The main all target
 all: cmake_check_build_system
 	cd /home/milan/practice/algos && $(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles /home/milan/practice/algos/search/CMakeFiles/progress.marks
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/all
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/clean
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +117,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/preinstall
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/preinstall
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -129,7 +132,7 @@ depend:
 
 # Convenience name for target.
 search/CMakeFiles/linear_search.dir/rule:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/CMakeFiles/linear_search.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/CMakeFiles/linear_search.dir/rule
 .PHONY : search/CMakeFiles/linear_search.dir/rule
 
 # Convenience name for target.
@@ -139,12 +142,12 @@ linear_search: search/CMakeFiles/linear_search.dir/rule
 
 # fast build rule for target.
 linear_search/fast:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/build
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/build
 .PHONY : linear_search/fast
 
 # Convenience name for target.
 search/CMakeFiles/binary_search.dir/rule:
-	cd /home/milan/practice/algos && $(MAKE) -f CMakeFiles/Makefile2 search/CMakeFiles/binary_search.dir/rule
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 search/CMakeFiles/binary_search.dir/rule
 .PHONY : search/CMakeFiles/binary_search.dir/rule
 
 # Convenience name for target.
@@ -154,7 +157,7 @@ binary_search: search/CMakeFiles/binary_search.dir/rule
 
 # fast build rule for target.
 binary_search/fast:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/build
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/build
 .PHONY : binary_search/fast
 
 binary_search.o: binary_search.c.o
@@ -163,7 +166,7 @@ binary_search.o: binary_search.c.o
 
 # target to build an object file
 binary_search.c.o:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.o
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.o
 .PHONY : binary_search.c.o
 
 binary_search.i: binary_search.c.i
@@ -172,7 +175,7 @@ binary_search.i: binary_search.c.i
 
 # target to preprocess a source file
 binary_search.c.i:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.i
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.i
 .PHONY : binary_search.c.i
 
 binary_search.s: binary_search.c.s
@@ -181,7 +184,7 @@ binary_search.s: binary_search.c.s
 
 # target to generate assembly for a file
 binary_search.c.s:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.s
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/binary_search.c.s
 .PHONY : binary_search.c.s
 
 linear_search.o: linear_search.c.o
@@ -190,7 +193,7 @@ linear_search.o: linear_search.c.o
 
 # target to build an object file
 linear_search.c.o:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.o
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.o
 .PHONY : linear_search.c.o
 
 linear_search.i: linear_search.c.i
@@ -199,7 +202,7 @@ linear_search.i: linear_search.c.i
 
 # target to preprocess a source file
 linear_search.c.i:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.i
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.i
 .PHONY : linear_search.c.i
 
 linear_search.s: linear_search.c.s
@@ -208,7 +211,7 @@ linear_search.s: linear_search.c.s
 
 # target to generate assembly for a file
 linear_search.c.s:
-	cd /home/milan/practice/algos && $(MAKE) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.s
+	cd /home/milan/practice/algos && $(MAKE) $(MAKESILENT) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/linear_search.c.s
 .PHONY : linear_search.c.s
 
 # Help Target

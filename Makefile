@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -98,13 +101,13 @@ edit_cache/fast: edit_cache
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles /home/milan/practice/algos/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/milan/practice/algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +117,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -132,12 +135,12 @@ depend:
 
 # Build rule for target.
 selection_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 selection_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 selection_sort
 .PHONY : selection_sort
 
 # fast build rule for target.
 selection_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/selection_sort.dir/build.make sort/CMakeFiles/selection_sort.dir/build
 .PHONY : selection_sort/fast
 
 #=============================================================================
@@ -145,12 +148,12 @@ selection_sort/fast:
 
 # Build rule for target.
 merge_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 merge_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 merge_sort
 .PHONY : merge_sort
 
 # fast build rule for target.
 merge_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/merge_sort.dir/build.make sort/CMakeFiles/merge_sort.dir/build
 .PHONY : merge_sort/fast
 
 #=============================================================================
@@ -158,12 +161,12 @@ merge_sort/fast:
 
 # Build rule for target.
 quick_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quick_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quick_sort
 .PHONY : quick_sort
 
 # fast build rule for target.
 quick_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/quick_sort.dir/build.make sort/CMakeFiles/quick_sort.dir/build
 .PHONY : quick_sort/fast
 
 #=============================================================================
@@ -171,12 +174,12 @@ quick_sort/fast:
 
 # Build rule for target.
 insertion_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 insertion_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 insertion_sort
 .PHONY : insertion_sort
 
 # fast build rule for target.
 insertion_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/insertion_sort.dir/build.make sort/CMakeFiles/insertion_sort.dir/build
 .PHONY : insertion_sort/fast
 
 #=============================================================================
@@ -184,12 +187,12 @@ insertion_sort/fast:
 
 # Build rule for target.
 bubble_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bubble_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bubble_sort
 .PHONY : bubble_sort
 
 # fast build rule for target.
 bubble_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/bubble_sort.dir/build.make sort/CMakeFiles/bubble_sort.dir/build
 .PHONY : bubble_sort/fast
 
 #=============================================================================
@@ -197,12 +200,12 @@ bubble_sort/fast:
 
 # Build rule for target.
 merge_insertion_sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 merge_insertion_sort
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 merge_insertion_sort
 .PHONY : merge_insertion_sort
 
 # fast build rule for target.
 merge_insertion_sort/fast:
-	$(MAKE) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/build
+	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/merge_insertion_sort.dir/build.make sort/CMakeFiles/merge_insertion_sort.dir/build
 .PHONY : merge_insertion_sort/fast
 
 #=============================================================================
@@ -210,12 +213,12 @@ merge_insertion_sort/fast:
 
 # Build rule for target.
 linear_search: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 linear_search
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linear_search
 .PHONY : linear_search
 
 # fast build rule for target.
 linear_search/fast:
-	$(MAKE) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/build
+	$(MAKE) $(MAKESILENT) -f search/CMakeFiles/linear_search.dir/build.make search/CMakeFiles/linear_search.dir/build
 .PHONY : linear_search/fast
 
 #=============================================================================
@@ -223,12 +226,12 @@ linear_search/fast:
 
 # Build rule for target.
 binary_search: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binary_search
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search
 .PHONY : binary_search
 
 # fast build rule for target.
 binary_search/fast:
-	$(MAKE) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/build
+	$(MAKE) $(MAKESILENT) -f search/CMakeFiles/binary_search.dir/build.make search/CMakeFiles/binary_search.dir/build
 .PHONY : binary_search/fast
 
 #=============================================================================
@@ -236,12 +239,12 @@ binary_search/fast:
 
 # Build rule for target.
 utils: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 utils
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils
 .PHONY : utils
 
 # fast build rule for target.
 utils/fast:
-	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	$(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
 #=============================================================================
@@ -249,12 +252,12 @@ utils/fast:
 
 # Build rule for target.
 polynomials: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 polynomials
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 polynomials
 .PHONY : polynomials
 
 # fast build rule for target.
 polynomials/fast:
-	$(MAKE) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/build
+	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/polynomials.dir/build.make misc/CMakeFiles/polynomials.dir/build
 .PHONY : polynomials/fast
 
 #=============================================================================
@@ -262,12 +265,12 @@ polynomials/fast:
 
 # Build rule for target.
 binary_addition: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binary_addition
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_addition
 .PHONY : binary_addition
 
 # fast build rule for target.
 binary_addition/fast:
-	$(MAKE) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/build
+	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/binary_addition.dir/build.make misc/CMakeFiles/binary_addition.dir/build
 .PHONY : binary_addition/fast
 
 #=============================================================================
@@ -275,12 +278,12 @@ binary_addition/fast:
 
 # Build rule for target.
 set_search_sum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 set_search_sum
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set_search_sum
 .PHONY : set_search_sum
 
 # fast build rule for target.
 set_search_sum/fast:
-	$(MAKE) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/build
+	$(MAKE) $(MAKESILENT) -f misc/CMakeFiles/set_search_sum.dir/build.make misc/CMakeFiles/set_search_sum.dir/build
 .PHONY : set_search_sum/fast
 
 # Help Target
